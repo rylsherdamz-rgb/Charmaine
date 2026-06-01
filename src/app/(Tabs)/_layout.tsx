@@ -2,14 +2,23 @@ import { Tabs } from "expo-router";
 import {Feather} from "@expo/vector-icons"
 
 
-export default function Tabs() {
+export default function TabsLayout() {
     return (
-    <Tabs
-        screenOptions={{
-                tabBarActiveTintColor: "#007AFF"
-            }}
-        >
-        <Tabs.Screen>
+    <Tabs>
+        <Tabs.Screen
+            name="Home"
+            options={{
+                    title : "Home"
+                }}
+            >
+
+        </Tabs.Screen>
+            <Tabs.Screen
+            name="Setting"
+            options={{
+                    title : "Setting"
+                }}
+            >
 
         </Tabs.Screen>
     </Tabs>
