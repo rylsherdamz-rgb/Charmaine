@@ -6,7 +6,6 @@ import "../../global.css"
 export default function RootLayout() {
   return (
 <SafeAreaProvider>
-<StatusBar barStyle={"dark-content"} />
 <Stack screenOptions={{
         headerShown : false
     }} />
