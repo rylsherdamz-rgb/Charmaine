@@ -8,6 +8,8 @@ export default function HomeTabLayout() {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
 
+
+
   return (
     <>
       <StatusBar
