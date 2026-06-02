@@ -1,4 +1,4 @@
-import { useTheme } from "../../../hooks/useTheme";
+import { useTheme } from "@/hooks/useTheme";
 import { Tabs } from "react-native-screens";
 import {Feather} from "@expo/vector-icons"
 import { StatusBar } from "react-native";
