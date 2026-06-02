@@ -1,8 +1,10 @@
 import { View, Text } from "react-native"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 
 export default function Home() {
-    return <View className="w-full h-full">
-        <Text className="text-green-200">
+    const insets = useSafeAreaInsets()
+    return <View style={{paddingTop : insets.top}} className="w-full bg-white h-full">
+        <Text className="text-white text-lg">
             This is the home page
         </Text>
 

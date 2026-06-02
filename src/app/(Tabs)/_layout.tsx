@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/useTheme";
-import { Tabs } from "react-native-screens";
+import { Tabs } from "expo-router";
 import {Feather} from "@expo/vector-icons"
 import { StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -16,8 +16,7 @@ export default function HomeTabLayout() {
         barStyle={theme.isDark ? "light-content" : "dark-content"}
         backgroundColor={theme.background}
       />
-      <Tabs
-        screenOptions={{
+      <Tabs screenOptions={{
           headerShown: false,
           tabBarStyle: {
             backgroundColor: theme.card,
