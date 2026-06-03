@@ -38,9 +38,9 @@ export default function HomeTabLayout() {
         <Tabs.Screen
           name="Home"
           options={{
-            title: "Chat",
+            title: "Home",
             tabBarIcon: ({ color }) => (
-              <MaterialIcons name="chat-bubble" size={22} color={color} />
+              <MaterialIcons name="home" size={22} color={color} />
             ),
           }}
         />
@@ -53,7 +53,18 @@ export default function HomeTabLayout() {
             ),
           }}
         />
+
+
         <Tabs.Screen
+          name="Chat"
+          options={{
+            title: "Chat",
+            tabBarIcon: ({ color }) => (
+              <MaterialIcons name="chat-bubble" size={22} color={color} />
+            ),
+          }}
+        />
+            <Tabs.Screen
           name="Tasks"
           options={{
             title: "Tasks",
@@ -62,7 +73,7 @@ export default function HomeTabLayout() {
             ),
           }}
         />
-        <Tabs.Screen
+<Tabs.Screen
           name="Setting"
           options={{
             title: "Settings",
@@ -81,6 +92,7 @@ export default function HomeTabLayout() {
             href: null,
           }}
         />
+
       </Tabs>
   );
 }
