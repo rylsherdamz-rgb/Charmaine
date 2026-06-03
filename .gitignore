@@ -41,3 +41,7 @@ example
 # generated native folders
 /ios
 /android
+
+# opencode config (contains secrets)
+opencode.json
+opencode.jsonc

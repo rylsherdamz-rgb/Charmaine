@@ -1,6 +1,6 @@
 import { useTheme } from "@/hooks/useTheme";
 import { Tabs } from "expo-router";
-import {Feather} from "@expo/vector-icons"
+import { MaterialIcons } from "@expo/vector-icons";
 import { StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -8,15 +8,14 @@ export default function HomeTabLayout() {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
 
-
-
   return (
     <>
       <StatusBar
         barStyle={theme.isDark ? "light-content" : "dark-content"}
         backgroundColor={theme.background}
       />
-      <Tabs screenOptions={{
+      <Tabs
+        screenOptions={{
           headerShown: false,
           tabBarStyle: {
             backgroundColor: theme.card,
@@ -27,7 +26,7 @@ export default function HomeTabLayout() {
             paddingBottom: Math.max(insets.bottom, 8),
             paddingHorizontal: 10,
           },
-          tabBarActiveTintColor: theme.accent,
+          tabBarActiveTintColor: theme.primaryContainer,
           tabBarInactiveTintColor: theme.textSecondary,
           tabBarLabelStyle: {
             fontFamily: "Inter",
@@ -46,24 +45,50 @@ export default function HomeTabLayout() {
         <Tabs.Screen
           name="Home"
           options={{
-            title: "Home",
+            title: "Chat",
             tabBarIcon: ({ color }) => (
-              <Feather name="home" size={20} color={color} />
+              <MaterialIcons name="chat-bubble" size={22} color={color} />
             ),
           }}
         />
-
+        <Tabs.Screen
+          name="Schedule"
+          options={{
+            title: "Schedule",
+            tabBarIcon: ({ color }) => (
+              <MaterialIcons name="calendar-today" size={22} color={color} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="Tasks"
+          options={{
+            title: "Tasks",
+            tabBarIcon: ({ color }) => (
+              <MaterialIcons name="check-circle" size={22} color={color} />
+            ),
+          }}
+        />
         <Tabs.Screen
           name="Setting"
           options={{
-            title: "Setting",
+            title: "Settings",
             tabBarIcon: ({ color }) => (
-              <Feather name="settings" size={20} color={color} />
+              <MaterialIcons name="settings" size={22} color={color} />
             ),
           }}
         />
-
-        </Tabs>
+        <Tabs.Screen
+          name="Notifications"
+          options={{
+            title: "Activity",
+            tabBarIcon: ({ color }) => (
+              <MaterialIcons name="auto-awesome" size={22} color={color} />
+            ),
+            href: null,
+          }}
+        />
+      </Tabs>
     </>
   );
 }
