@@ -27,6 +27,7 @@ export default function AppHeader({
           borderBottomColor: theme.border,
         },
       ]}
+        className="py-5"
     >
       <View style={styles.left}>
         {onMenuPress && (

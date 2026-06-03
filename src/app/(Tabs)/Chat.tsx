@@ -152,28 +152,6 @@ export default function ChatScreen() {
         />
       </View>
 
-      <View style={[styles.bottomBar, { borderTopColor: theme.border }]}>
-        <Pressable style={styles.bottomItem}>
-          <MaterialIcons name="terminal" size={20} color={theme.textSecondary} />
-          <ThemedText variant="label" style={{ fontSize: 10 }}>Console</ThemedText>
-        </Pressable>
-        <Pressable style={styles.bottomItem}>
-          <MaterialIcons name="analytics" size={20} color={theme.textSecondary} />
-          <ThemedText variant="label" style={{ fontSize: 10 }}>Metrics</ThemedText>
-        </Pressable>
-        <Pressable style={styles.bottomItem}>
-          <MaterialIcons name="layers" size={20} color={theme.textSecondary} />
-          <ThemedText variant="label" style={{ fontSize: 10 }}>Layers</ThemedText>
-        </Pressable>
-        <Pressable style={styles.bottomItem}>
-          <MaterialIcons name="hub" size={20} color={theme.textSecondary} />
-          <ThemedText variant="label" style={{ fontSize: 10 }}>Nodes</ThemedText>
-        </Pressable>
-        <Pressable style={[styles.bottomItem, { borderLeftWidth: 1, borderLeftColor: theme.border, paddingLeft: 12 }]}>
-          <MaterialIcons name="tune" size={20} color={theme.textSecondary} />
-          <ThemedText variant="label" style={{ fontSize: 10 }}>Config</ThemedText>
-        </Pressable>
-      </View>
     </View>
         </KeyboardAvoidingView>
   );
