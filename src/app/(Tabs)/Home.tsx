@@ -3,6 +3,7 @@ import { useTheme } from "@/hooks/useTheme";
 import { ThemedText } from "@/components/common/ThemedText";
 import { GlassCard } from "@/components/common/GlassCard";
 import { ChatBubble } from "@/components/chat/ChatBubble";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ChatInput } from "@/components/chat/ChatInput";
 import { MaterialIcons, Feather } from "@expo/vector-icons";
 import { useState, useCallback } from "react";
@@ -36,8 +37,9 @@ const INITIAL_MESSAGES: Message[] = [
   },
 ];
 
-export function ChatScreen() {
+export default function ChatScreen() {
   const theme = useTheme();
+  const insets = useSafeAreaInsets()
   const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES);
   const [isStreaming, setIsStreaming] = useState(false);
 
@@ -77,7 +79,7 @@ export function ChatScreen() {
   );
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
+    <View style={[styles.container, { backgroundColor: theme.background, paddingTop : insets.top }]}>
       <View style={[styles.header, { borderBottomColor: theme.border }]}>
         <View style={styles.headerLeft}>
           <MaterialIcons name="menu" size={22} color={theme.textPrimary} />

@@ -4,7 +4,7 @@ import { ThemedText } from "@/components/common/ThemedText";
 import { NotificationItem } from "@/components/notifications/NotificationItem";
 import { MaterialIcons } from "@expo/vector-icons";
 
-export function NotificationsScreen() {
+export default  function NotificationsScreen() {
   const theme = useTheme();
 
   return (

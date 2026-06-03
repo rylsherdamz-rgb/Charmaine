@@ -124,7 +124,7 @@ const getThemeModeSnapshot = (): ThemeMode => {
   return "system";
 };
 
-export const useTheme = () => {
+export const  useTheme = () => {
   const systemScheme = useColorScheme();
   const mode = useSyncExternalStore(subscribe, getThemeModeSnapshot, getThemeModeSnapshot);
   const resolvedMode = mode === "system" ? (systemScheme === "dark" ? "dark" : "light") : mode;

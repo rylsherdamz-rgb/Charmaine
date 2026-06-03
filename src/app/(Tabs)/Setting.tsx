@@ -16,7 +16,7 @@ interface AIModel {
   active: boolean;
 }
 
-export function SettingScreen() {
+export  default function SettingScreen() {
   const theme = useTheme();
   const [models, setModels] = useState<AIModel[]>([
     { id: "gpt4o", name: "GPT-4o", subtitle: "Optimized for reasoning and logic.", icon: "psychology", active: true },

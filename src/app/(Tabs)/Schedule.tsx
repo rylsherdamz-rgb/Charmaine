@@ -11,7 +11,7 @@ interface CalendarDay {
   isToday: boolean;
 }
 
-export function ScheduleScreen() {
+export default function ScheduleScreen() {
   const theme = useTheme();
 
   const calendarDays: CalendarDay[] = [

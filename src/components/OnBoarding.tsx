@@ -1,5 +1,6 @@
 import { View, Pressable, StyleSheet, ScrollView } from "react-native";
 import { useTheme } from "@/hooks/useTheme";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemedText } from "@/components/common/ThemedText";
 import { GlassCard } from "@/components/common/GlassCard";
 import { FeatureCard } from "@/components/onboarding/FeatureCard";
@@ -12,10 +13,11 @@ interface OnboardingProps {
 
 export function Onboarding({ onGetStarted, onSignIn }: OnboardingProps) {
   const theme = useTheme();
+  const insets = useSafeAreaInsets()
 
   return (
     <ScrollView
-      style={[styles.scroll, { backgroundColor: theme.background }]}
+      style={[styles.scroll, { backgroundColor: theme.background, paddingBottom : insets.bottom, paddingTop : insets.top }]}
       contentContainerStyle={styles.scrollContent}
       showsVerticalScrollIndicator={false}
     >

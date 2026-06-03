@@ -18,7 +18,7 @@ interface Task {
   aiSuggestion?: string;
 }
 
-export function TasksScreen() {
+export default  function TasksScreen() {
   const theme = useTheme();
   const [todayTasks, setTodayTasks] = useState<Task[]>([
     {

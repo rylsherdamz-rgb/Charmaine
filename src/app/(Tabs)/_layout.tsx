@@ -1,7 +1,6 @@
 import { useTheme } from "@/hooks/useTheme";
 import { Tabs } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
-import { StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function HomeTabLayout() {
@@ -9,13 +8,7 @@ export default function HomeTabLayout() {
   const insets = useSafeAreaInsets();
 
   return (
-    <>
-      <StatusBar
-        barStyle={theme.isDark ? "light-content" : "dark-content"}
-        backgroundColor={theme.background}
-      />
-      <Tabs
-        screenOptions={{
+          <Tabs screenOptions={{
           headerShown: false,
           tabBarStyle: {
             backgroundColor: theme.card,
@@ -89,6 +82,5 @@ export default function HomeTabLayout() {
           }}
         />
       </Tabs>
-    </>
   );
 }
