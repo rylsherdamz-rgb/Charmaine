@@ -2,6 +2,7 @@ import { View, ScrollView, Pressable, StyleSheet } from "react-native";
 import { useTheme } from "@/hooks/useTheme";
 import { ThemedText } from "@/components/common/ThemedText";
 import { GlassCard } from "@/components/common/GlassCard";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { TaskItem } from "@/components/tasks/TaskItem";
 import { TaskSection } from "@/components/tasks/TaskSection";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -20,6 +21,7 @@ interface Task {
 
 export default  function TasksScreen() {
   const theme = useTheme();
+    const insets = useSafeAreaInsets()
   const [todayTasks, setTodayTasks] = useState<Task[]>([
     {
       id: "1",
@@ -56,7 +58,7 @@ export default  function TasksScreen() {
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
+    <View style={[styles.container, { backgroundColor: theme.background, paddingTop : insets.top  }]}>
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <MaterialIcons name="auto-awesome" size={22} color={theme.primaryContainer} />

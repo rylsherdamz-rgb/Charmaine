@@ -1,4 +1,5 @@
-import { View, ScrollView, Pressable, StyleSheet } from "react-native";
+import { View, ScrollView, Pressable, StyleSheet, KeyboardAvoidingView } from "react-native";
+import { Platform } from "react-native";
 import { useTheme } from "@/hooks/useTheme";
 import { ThemedText } from "@/components/common/ThemedText";
 import { GlassCard } from "@/components/common/GlassCard";
@@ -79,6 +80,11 @@ export default function ChatScreen() {
   );
 
   return (
+   <KeyboardAvoidingView
+    className="flex flex-1"
+    behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+
     <View style={[styles.container, { backgroundColor: theme.background, paddingTop : insets.top }]}>
       <View style={[styles.header, { borderBottomColor: theme.border }]}>
         <View style={styles.headerLeft}>
@@ -169,6 +175,7 @@ export default function ChatScreen() {
         </Pressable>
       </View>
     </View>
+        </KeyboardAvoidingView>
   );
 }
 

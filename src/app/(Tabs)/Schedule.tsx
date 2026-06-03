@@ -1,5 +1,6 @@
 import { View, ScrollView, Pressable, StyleSheet } from "react-native";
 import { useTheme } from "@/hooks/useTheme";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemedText } from "@/components/common/ThemedText";
 import { GlassCard } from "@/components/common/GlassCard";
 import { EventCard } from "@/components/schedule/EventCard";
@@ -13,7 +14,7 @@ interface CalendarDay {
 
 export default function ScheduleScreen() {
   const theme = useTheme();
-
+    const insets = useSafeAreaInsets()
   const calendarDays: CalendarDay[] = [
     { day: 11, hasEvent: false, isToday: false },
     { day: 12, hasEvent: false, isToday: false },
@@ -26,7 +27,7 @@ export default function ScheduleScreen() {
   const dayLabels = ["MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
+    <View style={[styles.container, { backgroundColor: theme.background, paddingTop : insets.top }]}>
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <MaterialIcons name="auto-awesome" size={22} color={theme.primaryContainer} />
