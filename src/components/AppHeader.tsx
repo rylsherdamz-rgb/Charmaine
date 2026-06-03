@@ -28,6 +28,7 @@ export default function AppHeader({
         },
       ]}
         className="py-5"
+
     >
       <View style={styles.left}>
         {onMenuPress && (
@@ -45,6 +46,10 @@ export default function AppHeader({
           <MaterialIcons name={rightIcon as any} size={22} color={theme.textSecondary} />
         </Pressable>
       )}
+
+            <View className="w-12 h-12
+                rounded-full border border-green-300 bg-green-200">
+            </View>
     </View>
   );
 }
