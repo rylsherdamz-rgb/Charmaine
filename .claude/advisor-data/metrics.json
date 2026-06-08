@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-08T03:40:42.305Z",
+  "agentTypes": {
+    "general-purpose": {
+      "totalRuns": 8,
+      "totalToolCalls": 178,
+      "totalErrors": 3,
+      "totalTokens": {
+        "input": 16504015,
+        "output": 120974,
+        "cacheCreation": 0,
+        "cacheRead": 0
+      },
+      "toolFrequency": {
+        "Edit": 3,
+        "TaskUpdate": 2,
+        "Bash": 1
+      },
+      "runs": [
+        {
+          "timestamp": "2026-06-06T06:34:33.633Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 28,
+          "errors": 0,
+          "tokens": {
+            "input": 1677086,
+            "output": 20358,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Edit"
+          ],
+          "skills": [],
+          "durationMs": 1296479
+        },
+        {
+          "timestamp": "2026-06-06T07:18:37.833Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 8,
+          "errors": 0,
+          "tokens": {
+            "input": 594721,
+            "output": 7531,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Edit"
+          ],
+          "skills": [],
+          "durationMs": 1046342
+        },
+        {
+          "timestamp": "2026-06-06T07:19:22.878Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 17,
+          "errors": 0,
+          "tokens": {
+            "input": 1195493,
+            "output": 30873,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Edit"
+          ],
+          "skills": [],
+          "durationMs": 1091658
+        },
+        {
+          "timestamp": "2026-06-06T07:20:34.444Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 21,
+          "errors": 0,
+          "tokens": {
+            "input": 1743710,
+            "output": 7462,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 1876228
+        },
+        {
+          "timestamp": "2026-06-06T13:50:12.323Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 26,
+          "errors": 0,
+          "tokens": {
+            "input": 2416599,
+            "output": 6930,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 2235084
+        },
+        {
+          "timestamp": "2026-06-06T14:31:06.136Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 9,
+          "errors": 0,
+          "tokens": {
+            "input": 1065843,
+            "output": 15225,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "TaskUpdate"
+          ],
+          "skills": [],
+          "durationMs": 2289819
+        },
+        {
+          "timestamp": "2026-06-07T10:23:24.894Z",
+          "sessionId": "ba1b5304-dc9e-4d5b-841b-1d9033e281a8",
+          "toolCount": 60,
+          "errors": 3,
+          "tokens": {
+            "input": 7245842,
+            "output": 31564,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "TaskUpdate"
+          ],
+          "skills": [],
+          "durationMs": 1865359
+        },
+        {
+          "timestamp": "2026-06-08T03:40:41.803Z",
+          "sessionId": "2ab8f510-c0f6-4cdf-b466-e221655f3489",
+          "toolCount": 9,
+          "errors": 0,
+          "tokens": {
+            "input": 564721,
+            "output": 1031,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Bash"
+          ],
+          "skills": [],
+          "durationMs": 248907
+        }
+      ]
+    },
+    "fork": {
+      "totalRuns": 1,
+      "totalToolCalls": 10,
+      "totalErrors": 0,
+      "totalTokens": {
+        "input": 3280349,
+        "output": 4436,
+        "cacheCreation": 0,
+        "cacheRead": 0
+      },
+      "toolFrequency": {},
+      "runs": [
+        {
+          "timestamp": "2026-06-06T07:20:28.003Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 10,
+          "errors": 0,
+          "tokens": {
+            "input": 3280349,
+            "output": 4436,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 1435014
+        }
+      ]
+    },
+    "Explore": {
+      "totalRuns": 3,
+      "totalToolCalls": 57,
+      "totalErrors": 0,
+      "totalTokens": {
+        "input": 5234374,
+        "output": 40944,
+        "cacheCreation": 0,
+        "cacheRead": 0
+      },
+      "toolFrequency": {
+        "Bash": 1
+      },
+      "runs": [
+        {
+          "timestamp": "2026-06-06T09:17:08.773Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 7,
+          "errors": 0,
+          "tokens": {
+            "input": 499018,
+            "output": 14164,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Bash"
+          ],
+          "skills": [],
+          "durationMs": 568392
+        },
+        {
+          "timestamp": "2026-06-06T09:17:17.008Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 13,
+          "errors": 0,
+          "tokens": {
+            "input": 937580,
+            "output": 8188,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 576627
+        },
+        {
+          "timestamp": "2026-06-06T09:41:07.630Z",
+          "sessionId": "afc66567-3169-499c-a002-6760cacd40d4",
+          "toolCount": 37,
+          "errors": 0,
+          "tokens": {
+            "input": 3797776,
+            "output": 18592,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 1341860
+        }
+      ]
+    }
+  },
+  "orchestratorStats": {
+    "totalTurns": 44,
+    "toolFrequency": {
+      "Read": 383,
+      "Edit": 281,
+      "ExitPlanMode": 2,
+      "TaskCreate": 37,
+      "TaskUpdate": 51,
+      "Agent": 12,
+      "Bash": 347,
+      "Write": 133,
+      "TaskList": 2,
+      "WebSearch": 3,
+      "Skill": 4,
+      "TaskOutput": 1,
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page": 3,
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot": 3,
+      "LSP": 1,
+      "mcp__plugin_lumen_lumen__semantic_search": 1,
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_console_messages": 1,
+      "AskUserQuestion": 1,
+      "EnterPlanMode": 1,
+      "WebFetch": 2
+    },
+    "agentTypesSpawned": [
+      "general-purpose",
+      "fork",
+      "Explore"
+    ]
+  }
+}

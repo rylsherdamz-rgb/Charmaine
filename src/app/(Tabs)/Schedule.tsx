@@ -1,4 +1,5 @@
 import {View, Text, Pressable} from "react-native"
+import CalendarComponent from "@/components/schedule/Calendar"
 import AppHeader from "@/components/AppHeader"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 
@@ -14,6 +15,7 @@ export default function Schedule( ) {
         className="w-full h-full flex flex-1">
         <AppHeader />
 
+        <CalendarComponent />
 
     </View>
 
