@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "lastUpdated": "2026-06-08T04:52:41.097Z",
+  "lastUpdated": "2026-06-10T03:41:10.290Z",
   "agentTypes": {
     "general-purpose": {
-      "totalRuns": 8,
-      "totalToolCalls": 178,
+      "totalRuns": 11,
+      "totalToolCalls": 224,
       "totalErrors": 3,
       "totalTokens": {
-        "input": 16504015,
-        "output": 120974,
+        "input": 19403430,
+        "output": 139029,
         "cacheCreation": 0,
         "cacheRead": 0
       },
       "toolFrequency": {
         "Edit": 3,
         "TaskUpdate": 2,
-        "Bash": 1
+        "Bash": 2
       },
       "runs": [
         {
@@ -149,6 +149,53 @@
           ],
           "skills": [],
           "durationMs": 248907
+        },
+        {
+          "timestamp": "2026-06-09T12:40:12.273Z",
+          "sessionId": "1fc48d7c-431a-450d-a3d0-e5d49312ad3c",
+          "toolCount": 19,
+          "errors": 0,
+          "tokens": {
+            "input": 1212445,
+            "output": 6747,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 445195
+        },
+        {
+          "timestamp": "2026-06-09T12:40:12.340Z",
+          "sessionId": "1fc48d7c-431a-450d-a3d0-e5d49312ad3c",
+          "toolCount": 17,
+          "errors": 0,
+          "tokens": {
+            "input": 1111142,
+            "output": 5563,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 445263
+        },
+        {
+          "timestamp": "2026-06-09T12:40:15.304Z",
+          "sessionId": "1fc48d7c-431a-450d-a3d0-e5d49312ad3c",
+          "toolCount": 10,
+          "errors": 0,
+          "tokens": {
+            "input": 575828,
+            "output": 5745,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Bash"
+          ],
+          "skills": [],
+          "durationMs": 448233
         }
       ]
     },
@@ -182,17 +229,19 @@
       ]
     },
     "Explore": {
-      "totalRuns": 3,
-      "totalToolCalls": 57,
+      "totalRuns": 7,
+      "totalToolCalls": 97,
       "totalErrors": 0,
       "totalTokens": {
-        "input": 5234374,
-        "output": 40944,
+        "input": 9160091,
+        "output": 45626,
         "cacheCreation": 0,
         "cacheRead": 0
       },
       "toolFrequency": {
-        "Bash": 1
+        "Bash": 4,
+        "Read": 4,
+        "mcp__plugin_lumen_lumen__semantic_search": 2
       },
       "runs": [
         {
@@ -241,38 +290,142 @@
           "tools": [],
           "skills": [],
           "durationMs": 1341860
+        },
+        {
+          "timestamp": "2026-06-09T01:53:13.633Z",
+          "sessionId": "9e3043aa-ab53-4edb-a784-55fe7d853ce6",
+          "toolCount": 5,
+          "errors": 0,
+          "tokens": {
+            "input": 468167,
+            "output": 321,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Read"
+          ],
+          "skills": [],
+          "durationMs": 114039
+        },
+        {
+          "timestamp": "2026-06-09T04:14:23.318Z",
+          "sessionId": "9e3043aa-ab53-4edb-a784-55fe7d853ce6",
+          "toolCount": 12,
+          "errors": 0,
+          "tokens": {
+            "input": 1077476,
+            "output": 1000,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Read",
+            "Bash",
+            "mcp__plugin_lumen_lumen__semantic_search"
+          ],
+          "skills": [],
+          "durationMs": 244945
+        },
+        {
+          "timestamp": "2026-06-09T22:55:48.955Z",
+          "sessionId": "1fc48d7c-431a-450d-a3d0-e5d49312ad3c",
+          "toolCount": 12,
+          "errors": 0,
+          "tokens": {
+            "input": 1253518,
+            "output": 2318,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Bash",
+            "Read",
+            "mcp__plugin_lumen_lumen__semantic_search"
+          ],
+          "skills": [],
+          "durationMs": 149464
+        },
+        {
+          "timestamp": "2026-06-09T22:56:14.610Z",
+          "sessionId": "1fc48d7c-431a-450d-a3d0-e5d49312ad3c",
+          "toolCount": 11,
+          "errors": 0,
+          "tokens": {
+            "input": 1126556,
+            "output": 1043,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [
+            "Bash",
+            "Read"
+          ],
+          "skills": [],
+          "durationMs": 175187
+        }
+      ]
+    },
+    "Plan": {
+      "totalRuns": 1,
+      "totalToolCalls": 35,
+      "totalErrors": 0,
+      "totalTokens": {
+        "input": 3211475,
+        "output": 6114,
+        "cacheCreation": 0,
+        "cacheRead": 0
+      },
+      "toolFrequency": {},
+      "runs": [
+        {
+          "timestamp": "2026-06-09T02:14:45.931Z",
+          "sessionId": "9e3043aa-ab53-4edb-a784-55fe7d853ce6",
+          "toolCount": 35,
+          "errors": 0,
+          "tokens": {
+            "input": 3211475,
+            "output": 6114,
+            "cacheCreation": 0,
+            "cacheRead": 0
+          },
+          "tools": [],
+          "skills": [],
+          "durationMs": 1063973
         }
       ]
     }
   },
   "orchestratorStats": {
-    "totalTurns": 47,
+    "totalTurns": 80,
     "toolFrequency": {
-      "Read": 387,
-      "Edit": 284,
-      "ExitPlanMode": 2,
-      "TaskCreate": 37,
-      "TaskUpdate": 54,
-      "Agent": 12,
-      "Bash": 358,
-      "Write": 134,
+      "Read": 681,
+      "Edit": 341,
+      "ExitPlanMode": 5,
+      "TaskCreate": 71,
+      "TaskUpdate": 112,
+      "Agent": 25,
+      "Bash": 605,
+      "Write": 263,
       "TaskList": 2,
-      "WebSearch": 3,
-      "Skill": 4,
-      "TaskOutput": 1,
+      "WebSearch": 7,
+      "Skill": 10,
+      "TaskOutput": 12,
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page": 3,
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot": 3,
       "LSP": 4,
-      "mcp__plugin_lumen_lumen__semantic_search": 1,
+      "mcp__plugin_lumen_lumen__semantic_search": 3,
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_console_messages": 1,
-      "AskUserQuestion": 1,
-      "EnterPlanMode": 1,
-      "WebFetch": 2
+      "AskUserQuestion": 2,
+      "EnterPlanMode": 5,
+      "WebFetch": 8,
+      "PushNotification": 1
     },
     "agentTypesSpawned": [
       "general-purpose",
       "fork",
-      "Explore"
+      "Explore",
+      "Plan"
     ]
   }
 }

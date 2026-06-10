@@ -2,19 +2,35 @@
 
 import {createOpenAI} from "@ai-sdk/openai"
 import { storage } from "@/libs/MMKVConfig"
+import {generateText, streamText} from "ai"
 import { useState } from "react"
 
 export default  function useNIM() {
-
-    const [ModelList, setModelList] = useState<[]>([])
+const [ModelList, setModelList] = useState<[]>([])
+const [selectedModel, setSelectedMOdel] = useState<{}>({})
+const [response, setResponse] = useState<any>()
     // connst [model, setModel] = useState
-    look if i just choose a model in there
-    // const apikey = getKey()
-    // const nimConfig = createOpenAI({
-    // baseURL : "https://integrate.api.nvidia.com/v1",
-    // apiKey : apikey
-    // })
-    //
+    // look if i just choose a model in there
+     const apikey = getKey()
+    const nimConfig = createOpenAI({
+    baseURL : "https://integrate.api.nvidia.com/v1",
+    apiKey : apikey
+    })
+
+    async function ChatCompletion  (propmt : string)  {
+        const result = streamText({
+        model : "deepseek/deepseek-v4-pro",
+        prompt : `${propmt}`
+
+        })
+
+        for await (const textPart of result.textStream) {
+            setResponse(response)
+        }
+    }
+
+
+
     const setKey = (api: string) => {
         storage.set("nvidia-api", api )
     }
@@ -27,6 +43,7 @@ export default  function useNIM() {
         const item =  storage.getString(id)
         return item;
     }
+
 
 
     async function getAvailableModels () {
